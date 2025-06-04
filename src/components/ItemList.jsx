@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { items } from '../data/items';
 import ItemCard from './ItemCard';
 import ItemSearch from './ItemSearch';
-
+import { Row, Col } from 'react-bootstrap';
 
 export default function ItemList() {
   const [favorites, setFavorites] = useState(() => JSON.parse(localStorage.getItem('fav-items')) || []);
